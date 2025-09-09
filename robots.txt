@@ -1,3 +1,4 @@
 ﻿User-agent: *
 Allow: /
-Sitemap: https://yxsh.live/sitemap.xml
+Sitemap: https://adityaxd.vercel.app/sitemap.xml
+
