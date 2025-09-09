@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aditya Kardile — Portfolio</title>
+	<meta name="description" content="Portfolio of Aditya Kardile — developer building clean, fast, and accessible web experiences.">
+	<meta name="theme-color" content="#0f172a">
+	<link rel="manifest" href="./manifest.webmanifest">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<meta property="og:title" content="Aditya Kardile — Portfolio">
+	<meta property="og:description" content="Developer building clean, fast, and accessible web experiences.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://yxsh.live/">
+	<meta property="og:image" content="./assets/img/og-image.png">
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="#">AK</a>
+		<nav class="nav">
+			<a href="#projects">Projects</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+			<span class="sun">☀️</span>
+			<span class="moon">🌙</span>
+		</button>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="hero-content">
+				<h1><span class="hi">Hi, I'm</span> <span class="name">Aditya Kardile</span></h1>
+				<p class="tagline">I craft performant, elegant web apps with great UX.</p>
+				<div class="actions">
+					<a class="btn primary" href="#projects">View Projects</a>
+					<a class="btn ghost" href="#contact">Get in touch</a>
+				</div>
+			</div>
+			<div class="hero-art" aria-hidden="true"></div>
+		</section>
+
+		<section class="section" id="projects">
+			<h2>Featured Projects</h2>
+			<div class="grid projects">
+				<article class="card">
+					<h3>Fastfolio</h3>
+					<p>Ultra-light static portfolio generator with instant deploy.</p>
+					<a class="link" href="#" aria-label="Open Fastfolio project">View project →</a>
+				</article>
+				<article class="card">
+					<h3>PixelPerfect</h3>
+					<p>Image optimization pipeline to ship crisp, tiny assets.</p>
+					<a class="link" href="#" aria-label="Open PixelPerfect project">View project →</a>
+				</article>
+				<article class="card">
+					<h3>FormWise</h3>
+					<p>Accessible form components with validation and hints.</p>
+					<a class="link" href="#" aria-label="Open FormWise project">View project →</a>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="about">
+			<h2>About</h2>
+			<div class="about">
+				<p>I'm Aditya, a developer focused on building fast, accessible, and aesthetically pleasing web experiences. I enjoy turning ideas into delightful products.</p>
+				<ul class="skills">
+					<li>TypeScript</li>
+					<li>React</li>
+					<li>Node.js</li>
+					<li>Next.js</li>
+					<li>CSS/SCSS</li>
+					<li>Design Systems</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<h2>Contact</h2>
+			<form class="contact" action="https://formsubmit.co" method="POST">
+				<div class="row">
+					<label>
+						<span>Name</span>
+						<input type="text" name="name" required>
+					</label>
+					<label>
+						<span>Email</span>
+						<input type="email" name="email" required>
+					</label>
+				</div>
+				<label class="full">
+					<span>Message</span>
+					<textarea name="message" rows="5" required></textarea>
+				</label>
+				<input type="hidden" name="_captcha" value="false">
+				<button class="btn primary" type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> Aditya Kardile</p>
+		<div class="socials">
+			<a href="https://github.com/" aria-label="GitHub">GitHub</a>
+			<a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a>
+			<a href="mailto:hello@example.com" aria-label="Email">Email</a>
+		</div>
+	</footer>
+
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
